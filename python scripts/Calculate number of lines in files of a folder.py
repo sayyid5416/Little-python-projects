@@ -4,10 +4,6 @@ import os
 
 
 def main_____fctn(current_dir, extension):
-    """
-    This function RETURNS data (dict) for backup from APP DATA Folder
-    """            
-    
     
     directory_data = os.walk(current_dir)
     
