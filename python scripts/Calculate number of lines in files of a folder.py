@@ -33,18 +33,18 @@ def main_____fctn(current_dir, extension):
 
 if __name__ == "__main__":
     while True:
-        os.system('title Calculate Number of lines')                                            # Title
+        os.system('title Calculate Number of lines')                                                # Title
         
         try:
-            dir_ = input('> Enter the directory location: ')                                    # Inputs
-            file_ext = input('> Enter file extension: ')
+            dir_ = input('> Enter the directory location: (just press enter for "current dir")')    # Inputs
             if dir_  == '':
                 dir_ = os.getcwd()
-            number_of_lines = main_____fctn(dir_, file_ext)                                     # Main Function
+            file_ext = input('> Enter file extension: ')
+            number_of_lines = main_____fctn(dir_, file_ext)                                         # Main Function
         except Exception as e:
             print(f'[Main Error] {e}')
         else:
-            print(f'\n\nTotal Number of lines in all ".{file_ext}" files of {dir_} = {number_of_lines}\n\n')            # Output
+            print(f'\n\nTotal Number of lines in all ".{file_ext}" files of "{dir_}" = {number_of_lines}')            # Output
         finally:
             print('\n\n\n\n')
 
