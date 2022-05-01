@@ -42,19 +42,9 @@ if __name__ == "__main__":
     )                                                               # Title
     while True:
         try:
-            dir_ = input(
-                '> Enter the directory location: '
-                '(just press enter for "current dir")'
-            )                                                                                   # Inputs
-            if dir_  == '':
-                dir_ = os.getcwd()
-            file_ext = input(
-                '> Enter file extension: '
-            )
-            number_of_lines = main_____fctn(
-                dir_,
-                file_ext
-            )                                                                                   # Main Function
+            dir_ = input('> Enter the directory location: (press enter for current dir)') or os.getcwd()      # Directory
+            file_ext = input('> Enter file extension: ')                                                      # File type
+            number_of_lines = main_____fctn(dir_, file_ext)                                                   # Main Function
         except Exception as e:
             print(f'[Main Error] {e}')
         else:
