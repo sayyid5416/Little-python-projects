@@ -15,3 +15,7 @@
     - Copy this file to your Fusion Scripts directory. _(For windows it is: `C:\Program Files\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Deliver`)_
     - In your Deliver settings in Davinci resolve, Enable `Advanced Settings > Trigger script at end of render job`, and choose `video metadata fix` from `script` dropdown.
     - Render your video, a new video will be placed in the same folder as your rendered video.
+
+# [File type finder](/python-scripts/file_type_finder.py)
+  - Show a list of all files of specific type *(for ex: .py, .exe etc)*
+  - All files from folder and all of its subfolders would be searched
