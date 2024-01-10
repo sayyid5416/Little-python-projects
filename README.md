@@ -4,7 +4,7 @@
   - You can also specify the **file types**, like `txt` or `py`.
     - Leave empty to specify all files.
 
-# [Davinci Resolve Video metadata fix](/python-scripts/Video-metadata-fix.py)
+# [Davinci Resolve Video metadata fix](/python-scripts/video-metadata-fix.py)
   - Fixes 'unable to preview' for YT Shorts _([Discussion](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=165402))_
   - Requirements:
     - FFMPEG must be in the windows 'Path' environment variables
