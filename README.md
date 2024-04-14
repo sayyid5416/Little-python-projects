@@ -16,6 +16,12 @@
     - In your Deliver settings in Davinci resolve, Enable `Advanced Settings > Trigger script at end of render job`, and choose `video metadata fix` from `script` dropdown.
     - Render your video, a new video will be placed in the same folder as your rendered video.
 
+# [Subtitle fixer](/python-scripts/subtitle_fixer.py)
+  - Modify subtitles `.srt` file to remove clutter.
+  - Current modifications
+    - Remove any `-` from starting of subtitle.
+    - Remove any subtitle which contains bracketed (`()`, `{}`, `[]`) items. Ex: _[Music]_, _(explosion)_ etc
+
 # [File type finder](/python-scripts/file_type_finder.py)
   - Show a list of all files of specific type *(for ex: .py, .exe etc)*
   - All files from folder and all of its subfolders would be searched
